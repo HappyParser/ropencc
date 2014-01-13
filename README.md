@@ -66,6 +66,11 @@ Usage
         assert_equal '新年快乐', rs
     end
 
+Ruby
+----
+1.9.3-p448
+2.0.0-p247
+
 
 附：libopencc 作者简介
 --------------------
