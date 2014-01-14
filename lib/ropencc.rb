@@ -3,8 +3,6 @@
 require 'ffi'
 
 class Ropencc
-    VERSION = '0.0.5'
-
     module LibOpenCC
         extend FFI::Library
         ffi_lib 'opencc'
@@ -24,8 +22,8 @@ class Ropencc
 
     attr_accessor :descriptor
 
-    CONFIGS = ['zhs2zhtw_p.ini', 'zhs2zhtw_v.ini', 'zhs2zhtw_vp.ini', 'zht2zhtw_p.ini', 
-               'zht2zhtw_v.ini', 'zht2zhtw_vp.ini', 'zhtw2zhs.ini', 'zhtw2zht.ini', 
+    CONFIGS = ['zhs2zhtw_p.ini', 'zhs2zhtw_v.ini', 'zhs2zhtw_vp.ini', 'zht2zhtw_p.ini',
+               'zht2zhtw_v.ini', 'zht2zhtw_vp.ini', 'zhtw2zhs.ini', 'zhtw2zht.ini',
                'zhtw2zhcn_s.ini', 'zhtw2zhcn_t.ini', 'zhs2zht.ini', 'zht2zhs.ini']
 
     DICTS = {
